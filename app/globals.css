@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #eceee6;
+  --paper-raised: #f5f6f0;
+  --ink: #16283d;
+  --ink-soft: #3c5570;
+  --ink-faint: #16283d66;
+  --line: #16283d33;
+  --line-strong: #16283d80;
+
+  --crimson: #b23a48;
+  --ochre: #d9a441;
+  --cyan: #4a7fa5;
+
+  --bg: var(--paper);
+  --bg-raised: var(--paper-raised);
+  --fg: var(--ink);
+  --fg-soft: var(--ink-soft);
+  --fg-faint: var(--ink-faint);
+  --rule: var(--line);
+  --rule-strong: var(--line-strong);
+  --accent: var(--crimson);
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-work-sans);
+  --font-mono: var(--font-space-mono);
+  --font-hand: var(--font-caveat);
+}
+
+[data-theme="blueprint"] {
+  --bg: #142339;
+  --bg-raised: #182a43;
+  --fg: #eaf1f6;
+  --fg-soft: #a9c0d4;
+  --fg-faint: #eaf1f64d;
+  --rule: #eaf1f633;
+  --rule-strong: #eaf1f659;
+  --accent: #e8a24a;
+}
+
+* {
+  border-color: var(--rule);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  transition: background-color 0.35s ease, color 0.35s ease;
+  background-image:
+    linear-gradient(var(--rule) 1px, transparent 1px),
+    linear-gradient(90deg, var(--rule) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-attachment: fixed;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+a {
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+.font-mono {
+  font-family: var(--font-mono);
+}
+.font-hand {
+  font-family: var(--font-hand);
+}
+
+.sheet {
+  background: var(--bg-raised);
+  border: 1px solid var(--rule-strong);
+}
+
+.leader {
+  stroke: var(--fg-faint);
+  stroke-width: 1;
+  fill: none;
+}
+
+.tick {
+  color: var(--fg-faint);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--accent);
+  color: var(--bg);
+  padding: 0.75rem 1.25rem;
+  z-index: 100;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
