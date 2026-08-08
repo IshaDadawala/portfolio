@@ -34,9 +34,9 @@ Open http://localhost:3000.
    ```bash
    git init
    git add .
-   git commit -m "Initial portfolio"
+   git commit -m "Portfolio"
    git branch -M main
-   git remote add origin https://github.com/<you>/<repo>.git
+   git remote add origin https://github.com/idadawala/portfolio.git
    git push -u origin main
    ```
 2. Go to vercel.com/new, import the repo, keep the default Next.js settings,
