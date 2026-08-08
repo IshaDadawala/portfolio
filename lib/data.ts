@@ -296,7 +296,7 @@ export const nav = [
 ];
 
 export const site = {
-  name: "Isha P Dadawala",
+  name: "Isha Dadawala",
   role: "Product-minded Computer Science graduate student",
   tagline: "I design the parts list before I write the code.",
   email: "you@example.com",
