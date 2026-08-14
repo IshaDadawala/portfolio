@@ -299,7 +299,7 @@ export const site = {
   name: "Isha Dadawala",
   role: "Product-minded Computer Science graduate student",
   tagline: "I design the parts list before I write the code.",
-  email: "you@example.com",
+  email: "idadawala9@gmail.com",
   linkedin: "https://linkedin.com/in/isha-dadawala",
   github: "https://github.com/IshaDadawala",
   resumeHref: "/resume.pdf",
