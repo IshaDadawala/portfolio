@@ -14,7 +14,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-[var(--fg-faint)]"
         >
-          Sheet 00 — Cover
+          Sheet 00 - Cover
         </motion.p>
 
         <motion.h1
@@ -33,7 +33,7 @@ export default function Hero() {
           className="mt-6 max-w-xl text-lg text-[var(--fg-soft)] sm:text-xl"
         >
           {site.role}. I ideate, I design, and I'm building the engineering to
-          match — {site.tagline}
+          match - {site.tagline}
         </motion.p>
 
         <motion.div
@@ -62,7 +62,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.5 }}
           className="mt-16 font-hand text-2xl text-[var(--accent)]"
         >
-          scroll — or press &lsquo;/&rsquo; for the index →
+          scroll  or press &lsquo;/&rsquo; for the index →
         </motion.p>
       </div>
 

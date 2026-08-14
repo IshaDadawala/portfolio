@@ -22,7 +22,7 @@ export default function Experience() {
             <ul className="space-y-2 text-[15px] text-[var(--fg-soft)]">
               {e.bullets.map((b) => (
                 <li key={b} className="flex gap-2">
-                  <span style={{ color: "var(--accent)" }}>—</span>
+                  <span style={{ color: "var(--accent)" }}>-</span>
                   {b}
                 </li>
               ))}

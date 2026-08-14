@@ -9,7 +9,7 @@ export default function CursorGlow() {
 
   useEffect(() => {
     if (reduceMotion) return;
-    // Skip on touch devices — there's no real cursor to glow around.
+    // Skip on touch devices there's no real cursor to glow around.
     if (window.matchMedia("(pointer: coarse)").matches) return;
 
     function handle(e: MouseEvent) {

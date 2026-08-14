@@ -10,7 +10,7 @@ export default function About() {
         <div className="space-y-5 text-[17px] leading-relaxed text-[var(--fg-soft)]">
           <p>
             I care more about why a product should exist than what stack it's
-            built on. That instinct shows up everywhere — in how I frame a
+            built on. That instinct shows up everywhere, in how I frame a
             project, in the fact that Comubridge started from an accessibility
             gap and not a tech-stack choice, and in how I spent an undergrad
             degree in IT mostly asking product questions.
@@ -22,8 +22,8 @@ export default function About() {
             editor.
           </p>
           <p>
-            Outside of coursework I paint, build things with my hands, and —
-            unreasonably — enjoy assembling IKEA furniture. That last one
+            Outside of coursework I paint, build things with my hands, and
+            unreasonably enjoy assembling IKEA furniture. That last one
             isn't a joke entry: an instruction sheet with numbered parts,
             exploded diagrams, and zero ambiguity is one of the best pieces of
             product design most people ignore. It's part of why this site

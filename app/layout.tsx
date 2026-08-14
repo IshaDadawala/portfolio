@@ -3,6 +3,7 @@ import { Fraunces, Work_Sans, Space_Mono, Caveat } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/data";
 import MotionProvider from "@/components/MotionProvider";
+import CursorGlow from "@/components/CursorGlow";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -28,7 +29,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: `${site.name} — Portfolio`,
+  title: `${site.name}  Portfolio`,
   description: site.tagline,
 };
 
@@ -57,6 +58,7 @@ export default function RootLayout({
         <a href="#main" className="skip-link">
           Skip to content
         </a>
+        <CursorGlow />
         <MotionProvider>{children}</MotionProvider>
       </body>
     </html>
