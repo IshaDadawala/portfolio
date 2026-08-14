@@ -28,13 +28,18 @@ export default function CommandPalette() {
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
-      if (e.key === "/" && !open && document.activeElement?.tagName !== "INPUT") {
-        e.preventDefault();
-        setOpen(true);
-      } else if (e.key === "Escape" && open) {
-        setOpen(false);
-      }
+  if (e.key === "/") {
+    if (open) {
+      e.preventDefault();
+      setOpen(false);
+    } else if (document.activeElement?.tagName !== "INPUT") {
+      e.preventDefault();
+      setOpen(true);
     }
+    } else if (e.key === "Escape" && open) {
+      setOpen(false);
+    }
+  }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
   }, [open]);
@@ -69,7 +74,7 @@ export default function CommandPalette() {
 
       {open && (
         <div
-          className="fixed inset-0 z-50 flex items-start justify-center pt-24 px-4"
+          className="fixed inset-0 z-50 flex items-start justify-end pt-24 pr-4 sm:pr-8"
           style={{ background: "rgba(20, 35, 57, 0.55)" }}
           onClick={() => setOpen(false)}
           role="dialog"
