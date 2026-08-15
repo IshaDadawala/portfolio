@@ -251,11 +251,56 @@ export const achievements: Achievement[] = [
   },
 ];
 
+export const courseworkUndergrad: string[] = [
+  "Mathematics-I",
+  "Fundamentals of Computer",
+  "Fundamentals of Programming using C-I",
+  "Internet & Web Technologies",
+  "Mathematics-II",
+  "Fundamentals of Programming using C-II",
+  "Introduction to DBMS",
+  "Fundamentals of Electronics",
+  "Microprocessor & Assembly Language",
+  "Data Structures",
+  "Object-Oriented Programming",
+  "Computer Network",
+  "Fundamentals of Embedded Systems & IoT",
+  "VB.NET",
+  "Web Development-I",
+  "Web Development-II",
+  "RDBMS",
+  "Computer Graphics",
+  "System Analysis & Design",
+  "Java",
+  "ASP.NET",
+  "Operating System",
+  "E-Business & Cyber Laws",
+  "Application Development using Full Stack",
+  "Software Engineering",
+  "Optimization Techniques",
+  "Java Web Development",
+  "Enterprise Java",
+  "Smart Device Computing using iOS",
+  "Artificial Intelligence",
+];
+
+export const courseworkGrad: string[] = [
+  "Android Software Engineering",
+  "Artificial Intelligence",
+  "Computer Architecture",
+  "Database Systems",
+  "Operating Systems",
+  "Advanced Database Systems",
+  "Software Engineering",
+  "Big Data Analytics",
+  "Systems Programming",
+];
+
 export interface CourseInProgress {
   name: string;
   href: string;
 }
-
+  
 export const coursesInProgress: CourseInProgress[] = [
   { name: "Google UX Design", href: "https://www.coursera.org/specializations/google-ux-design" },
   { name: "AI Engineer Associate", href: "https://www.coursera.org/specializations/packt-ai-engineer-associate" },
@@ -291,6 +336,7 @@ export const nav = [
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#achievements", label: "Achievements" },
+  { href: "#coursework", label: "Coursework" },
   { href: "#hobbies", label: "Outside Work" },
   { href: "#contact", label: "Contact" },
 ];
