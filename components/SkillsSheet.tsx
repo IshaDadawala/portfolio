@@ -5,12 +5,14 @@ const statusLabel: Record<Proficiency, string> = {
   core: "CORE",
   production: "IN PRODUCTION",
   learning: "LEARNING",
+  completed: "COMPLETED",
 };
 
 const statusColor: Record<Proficiency, string> = {
   core: "var(--fg)",
   production: "var(--accent)",
   learning: "var(--fg-faint)",
+  completed: "var(--fg-soft)",
 };
 
 function CourseList({ courses }: { courses: string[] }) {
