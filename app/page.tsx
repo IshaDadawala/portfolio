@@ -5,6 +5,7 @@ import SkillsSheet from "@/components/SkillsSheet";
 import ProjectsPreview from "@/components/ProjectsPreview";
 import Experience from "@/components/Experience";
 import EducationAchievements from "@/components/EducationAchievements";
+import Coursework from "@/components/Coursework";
 import Hobbies from "@/components/Hobbies";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -20,6 +21,7 @@ export default function Home() {
         <ProjectsPreview />
         <Experience />
         <EducationAchievements />
+        <Coursework />
         <Hobbies />
         <Contact />
       </main>
