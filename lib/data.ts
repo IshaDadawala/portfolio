@@ -336,7 +336,6 @@ export const nav = [
   { href: "#projects", label: "Projects" },
   { href: "#experience", label: "Experience" },
   { href: "#achievements", label: "Achievements" },
-  { href: "#coursework", label: "Coursework" },
   { href: "#hobbies", label: "Outside Work" },
   { href: "#contact", label: "Contact" },
 ];
