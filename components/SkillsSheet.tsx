@@ -1,5 +1,5 @@
 import SectionHeading from "./SectionHeading";
-import { skillCategories, courseworkGrad, courseworkUndergrad, type Proficiency } from "@/lib/data";
+import { skillCategories, type Proficiency } from "@/lib/data";
 
 const statusLabel: Record<Proficiency, string> = {
   core: "CORE",
@@ -14,21 +14,6 @@ const statusColor: Record<Proficiency, string> = {
   learning: "var(--fg-faint)",
   completed: "var(--fg-soft)",
 };
-
-function CourseList({ courses }: { courses: string[] }) {
-  return (
-    <ul className="flex flex-wrap gap-2">
-      {courses.map((c) => (
-        <li
-          key={c}
-          className="border border-[var(--rule-strong)] px-2.5 py-1 font-mono text-[11px] text-[var(--fg-soft)]"
-        >
-          {c}
-        </li>
-      ))}
-    </ul>
-  );
-}
 
 export default function SkillsSheet() {
   return (
@@ -70,30 +55,6 @@ export default function SkillsSheet() {
             </ul>
           </div>
         ))}
-      </div>
-
-      <div className="sheet mt-6 p-6">
-        <div className="mb-4 border-b border-[var(--rule)] pb-3">
-          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-[var(--fg-faint)]">
-            SHEET E
-          </p>
-          <h3 className="font-display text-xl italic">Relevant Coursework</h3>
-        </div>
-
-        <div className="space-y-6">
-          <div>
-            <p className="mb-3 font-mono text-[11px] uppercase tracking-wider text-[var(--fg-faint)]">
-              Graduate
-            </p>
-            <CourseList courses={courseworkGrad} />
-          </div>
-          <div>
-            <p className="mb-3 font-mono text-[11px] uppercase tracking-wider text-[var(--fg-faint)]">
-              Undergraduate
-            </p>
-            <CourseList courses={courseworkUndergrad} />
-          </div>
-        </div>
       </div>
     </section>
   );
