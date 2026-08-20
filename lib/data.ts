@@ -269,7 +269,7 @@ export const education: EducationEntry[] = [
     note: "27 of 30 credits complete , remaining coursework plus a 3-credit internship ahead.",
   },
   {
-    degree: "B.Tech, Information Technology",
+    degree: "B.Sc, Information Technology",
     org: "Veer Narmad South Gujarat University",
     period: "2023",
   },
